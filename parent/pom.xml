@@ -143,7 +143,18 @@
 							<arch>x86_64</arch>
 						</environment>
 					</environments>
+					<sourceReferences>
+						<generate>true</generate>
+					</sourceReferences>
 				</configuration>
+                                        <dependencies>
+                                                <dependency>
+                                                        <groupId>org.eclipse.tycho.extras</groupId>
+                                                        <artifactId>tycho-sourceref-jgit</artifactId>
+                                                        <version>${tychoExtrasVersion}</version>
+                                                        <scope>compile</scope>
+                                                </dependency>
+                                        </dependencies>
 			</plugin>
 
 			<plugin>
